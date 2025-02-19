@@ -1,0 +1,341 @@
+/* استيراد خطوط عربية جذابة من Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Tajawal', sans-serif; /* تغيير الخط إلى Tajawal */
+    background-color: #e0e5ec;
+    color: #333;
+    margin: 0;
+    padding: 5px 10%;
+    text-align: right;
+    overflow-x: hidden;
+}
+
+/* Neumorphism Effect مع تقليل تشتت الظل */
+.neumorphic-header, .neumorphic-card, .neumorphic-btn, .neumorphic-form, .neumorphic-input, .neumorphic-footer {
+    background: #e0e5ec;
+    box-shadow: 8px 8px 16px #a3b1c6, -8px -8px 16px #ffffff; /* تقليل تشتت الظل */
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.neumorphic-form{
+    padding: 10px 5px;
+}
+.neumorphic-btn {
+    margin: 10px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #fff; /* لون النص الأبيض */
+    text-decoration: none; /* إزالة الخط تحت الأزرار */
+}
+
+.neumorphic-btn:hover {
+    box-shadow: inset 8px 8px 16px #a3b1c6, inset -8px -8px 16px #ffffff; /* زيادة حدة الظل الداخلي */
+}
+
+/* ألوان الأزرار */
+.btn-download {
+    background-color: #4ECDC4; /* لون أخضر مريح */
+}
+
+.btn-login {
+    background-color: #6B5B95; /* لون بنفسجي مريح */
+}
+
+.btn-download:hover, .btn-login:hover {
+    opacity: 0.9;
+}
+
+/* عكس تأثير الحقول في النموذج */
+.neumorphic-input {
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    margin: 10px 0;
+    width: 80%;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: inset 5px 5px 10px #a3b1c6, inset -5px -5px 10px #ffffff; /* تأثير للداخل */
+}
+
+.neumorphic-input:focus {
+    box-shadow: inset 8px 8px 15px #a3b1c6, inset -8px -8px 15px #ffffff; /* زيادة حدة الظل الداخلي */
+}
+
+header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 40px;
+    width: calc(100% - 40px);
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-link {
+    text-decoration: none !important;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    margin: 20px;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero-animation {
+    position: relative;
+}
+
+.hero-animation img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    z-index: 2;
+    position: relative;
+}
+
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.shape-1 {
+    background: #6b5b95;
+    width: 200px;
+    height: 200px;
+    top: -50px;
+    left: -50px;
+}
+
+.shape-2 {
+    background: #4ecdc5;
+    width: 150px;
+    height: 150px;
+    bottom: -50px;
+    right: -50px;
+}
+
+.features {
+    padding: 50px 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px; /* زيادة المسافة بين الكروت */
+}
+
+.feature-item {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-item .icon {
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* تلوين أيقونات البطاقات */
+.feature-item .icon i {
+    color: #6B5B95; /* لون بنفسجي */
+}
+
+/* فواصل بين الأقسام */
+.section-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 40px 0;
+}
+
+.section-divider .circle {
+    width: 15px;
+    height: 15px;
+    background: #e0e5ec;
+    border-radius: 50%;
+    box-shadow: inset 3px 3px 6px #a3b1c6, inset -3px -3px 6px #ffffff; /* تأثير للداخل */
+}
+
+.documentation, .contact {
+    padding: 50px 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+footer {
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+footer .footer-links, footer .social-links {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* تحسين التجاوب مع الشاشات المختلفة */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .feature-item {
+        padding: 20px;
+    }
+
+    .feature-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .feature-item p {
+        font-size: 0.9rem;
+    }
+
+    .section-divider .circle {
+        width: 10px;
+        height: 10px;
+    }
+
+    .vertical-lines .line-left {
+        left: 10%;
+    }
+
+    .vertical-lines .line-right {
+        right: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .feature-item {
+        padding: 15px;
+    }
+
+    .feature-item h3 {
+        font-size: 1rem;
+    }
+
+    .feature-item p {
+        font-size: 0.8rem;
+    }
+
+    .section-divider .circle {
+        width: 8px;
+        height: 8px;
+    }
+
+    .vertical-lines .line-left {
+        left: 5%;
+    }
+
+    .vertical-lines .line-right {
+        right: 5%;
+    }
+}
